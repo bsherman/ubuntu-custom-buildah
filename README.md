@@ -6,7 +6,7 @@ Customized, daily updated, Ubuntu image for building in [Gitea Actions' act runn
 
 ## What is this?
 
-This version of Ubuntu image is only lightly modified, based on [catthehacker/ubuntu:act-22.04](https://github.com/catthehacker/docker_images), but it has added:
+This version of Ubuntu image is lightly modified, based on [catthehacker/ubuntu:act-22.04](https://github.com/catthehacker/docker_images), but it has added:
 - `buildah` for podman building
 - `dosfstools`
 - `isolinux`
@@ -25,7 +25,7 @@ This is not an exhaustive guide, but specifically, for [Gitea Actions' act runne
 
 When configuring your runner, set a label like:
 ```
-./act_runner register --labels ubuntu-22.04:docker://ghcr.io/bsherman/ubuntu-buildah:custom-22.04
+./act_runner register --labels ubuntu-22.04:docker://ghcr.io/bsherman/ubuntu-buildah:act-22.04
 ```
 
 
