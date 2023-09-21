@@ -6,12 +6,17 @@ Customized, daily updated, Ubuntu image for building in [Gitea Actions' act runn
 
 ## What is this?
 
-This version of Ubuntu image is only lightly modified, based on [catthehacker/ubuntu:custom-22.04](https://github.com/catthehacker/docker_images), but it has added:
+This version of Ubuntu image is only lightly modified, based on [catthehacker/ubuntu:act-22.04](https://github.com/catthehacker/docker_images), but it has added:
 - `buildah` for podman building
+- `dosfstools`
+- `isolinux`
+- `pre-commit` for linting checks, etc
 - `skopeo` for podman tooling
+- `syslinux`
+- `xorriso`
 - plus, `apt update && apt upgrade` is run daily
 
-This is a fairly heavy image, at about 7.5GB, but it contains a lot of stuff to avoid headaches when doing builds. 
+This image weighs in at about 1.5GB.
 
 
 ## How do I use it?
